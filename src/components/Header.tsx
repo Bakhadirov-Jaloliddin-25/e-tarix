@@ -9,7 +9,7 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <div className="bg-white">
-      <div className="container flex justify-between py-8">
+      <div className="container flex justify-between py-6 mb-10">
         <img
           src={logo}
           alt="logo"
