@@ -27,16 +27,24 @@ const Header = () => {
             </Link>
           ))}
         </ul>
-        <div className="flex justify-between gap-4">
-          <img src={video} alt="video icon" />
-          <img src={photo} alt="photo icon" />
+        <div className="flex items-center justify-between gap-4">
+          <Link to={""}>
+            <img src={video} alt="video icon" />
+          </Link>
+          <Link to={""}>
+            <img src={photo} alt="photo icon" />
+          </Link>
           <div className="w-[230px] h-10 rounded-lg bg-[#F8F8F8] flex justify-end items-center px-3">
             <input
               type="text"
               onKeyDown={(e) => e.key == "Enter"}
               className="w-full outline-none bg-[#F8F8F8]"
             />
-            <img src={search} alt="search icon" className="size-5" />
+            <img
+              src={search}
+              alt="search icon"
+              className="size-5 cursor-pointer"
+            />
           </div>
         </div>
       </div>

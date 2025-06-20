@@ -1,11 +1,11 @@
 import "./App.css";
-import Layout from "./layout/Layout";
+import Routers from "./router";
 
 function App() {
   return (
     <div className="h-[100vh] bg-[#E8F0F5]">
       <div className="font-product-sans">
-        <Layout />
+        <Routers />
       </div>
     </div>
   );
