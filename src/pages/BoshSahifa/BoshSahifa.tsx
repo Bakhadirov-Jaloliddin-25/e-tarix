@@ -5,14 +5,17 @@ import madinah from "../../assets/images/madinah.png";
 import search from "../../assets/images/second_search.svg";
 import comment from "../../assets/images/comment.svg";
 import share from "../../assets/images/share.svg";
+import Main from "../../components/Main";
+import { useNavigate } from "react-router-dom";
 
 const BoshSahifa = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Hero />
       <div className="container flex gap-6 justify-center">
         <Aside />
-        <div>
+        <div className="flex flex-col gap-8">
           <div className="w-[680px] h-[700px] bg-white p-5 rounded-lg">
             <img src={madinah} alt="madinah.png" />
             <div className="flex justify-between py-5">
@@ -51,11 +54,18 @@ const BoshSahifa = () => {
                 <div className="w-2 h-2 rounded-full bg-[#D9D9D9] block"></div>
                 <p>13.06.2024</p>
               </div>
-              <button className="w-[140px] h-[40px] text-[#A2591A] border border-[#A2591A] rounded-2xl hover:bg-[#A2591A] hover:text-white duration-300">
+              <button
+                onClick={() => navigate("/tarix")}
+                className="w-[140px] h-[40px] text-[#A2591A] border border-[#A2591A] rounded-2xl hover:bg-[#A2591A] hover:text-white duration-300"
+              >
                 BATAFSIL...
               </button>
             </div>
           </div>
+          {[...Array(3)].map((_, index) => (
+            <Main key={index} />
+          ))}
+          <Main />
         </div>
         <Sidebar />
       </div>

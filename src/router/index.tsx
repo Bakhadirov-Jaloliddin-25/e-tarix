@@ -7,6 +7,7 @@ import JahonTarixi from "../pages/JahonTarixi/JahonTarixi";
 import Shaxslar from "../pages/Shaxslar/Shaxslar";
 import Obidalar from "../pages/Obidalar/Obidalar";
 import Maqolalar from "../pages/Maqolalar/Maqolalar";
+import Videolar from "../components/Videolar";
 
 const Routers = () => {
   return (
@@ -39,6 +40,14 @@ const Routers = () => {
             {
               path: "/obidalar",
               element: <Obidalar />,
+            },
+            {
+              path: "/videolar",
+              element: <Videolar />,
+            },
+            {
+              path: "/rasmlar",
+              element: <Videolar />,
             },
           ],
         },

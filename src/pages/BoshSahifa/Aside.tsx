@@ -1,6 +1,9 @@
+import Obidalar from "../../components/Obidalar";
+import Shaxslar from "../../components/Shaxslar";
+
 const Aside = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-14">
       <div className="w-[250px] h-[120px] bg-white text-[#4D4D4D] rounded-xl px-4 py-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -24,6 +27,17 @@ const Aside = () => {
           </p>
         </div>
       </div>
+      <div className="flex flex-col gap-4 w-[250px] h-[220px] bg-white text-[#4D4D4D] rounded-xl px-4 py-2">
+        <h2 className="font-bold">Tarixda bugun</h2>
+        <p className="w-[220px] text-xs leading-5">
+          Ҳижрий 950-йил 17-робиъул-аввал куни (милодий 1543-йил 20-июн)
+          Усмонлилар ҳарбий денгиз флоти Барбароса қўмондонлигида Ситсилия ва
+          Италиянинг баъзи қирғоқларини ва Типпер дарёсида жойлашган Остия
+          портини қўлга киритади.
+        </p>
+      </div>
+      <Shaxslar />
+      <Obidalar />
     </div>
   );
 };
