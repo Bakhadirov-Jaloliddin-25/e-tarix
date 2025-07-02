@@ -13,10 +13,10 @@ const BoshSahifa = () => {
   return (
     <>
       <Hero />
-      <div className="container flex gap-6 justify-center">
+      <div className="container flex gap-4 justify-center">
         <Aside />
         <div className="flex flex-col gap-8">
-          <div className="w-[680px] h-[700px] bg-white p-5 rounded-lg">
+          <div className="w-[670px] h-[700px] bg-white p-5 rounded-lg">
             <img src={madinah} alt="madinah.png" />
             <div className="flex justify-between py-5">
               <div className="w-[100px] h-[30px] rounded-2xl bg-[#ebc8b6] font-bold text-xs flex items-center justify-center tracking-widest">

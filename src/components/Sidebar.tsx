@@ -3,7 +3,7 @@ import Videolar from "./Videolar";
 
 const Sidebar = () => {
   return (
-    <div className="container max-w-[360px]">
+    <div className="max-w-[360px]">
       <div className="flex flex-col justify-between">
         <div className="bg-white w-full h-[70px] rounded-xl font-semibold text-2xl flex items-center indent-8 text-[#4D4D4D]">
           Ko‘p ko‘rilganlar

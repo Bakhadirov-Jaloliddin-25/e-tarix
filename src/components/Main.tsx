@@ -3,7 +3,7 @@ import search from "../assets/images/search.svg";
 
 const Main = () => {
   return (
-    <div className="w-[680px] h-[270px] bg-white p-5 rounded-lg flex gap-6">
+    <div className="w-[670px] h-[270px] bg-white p-5 rounded-lg flex gap-6">
       <div className="w-[215px] h-[215px]">
         <img src={madinah} alt="madinah.png" />
       </div>
